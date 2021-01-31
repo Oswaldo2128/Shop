@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Editar Producto | LO-Store</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7adb55e1a0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 clearfix">
+                        <div class="logo pull-left">
+                            <a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 clearfix">
+                        <div class="shop-menu clearfix pull-right">
+                            <ul class="nav navbar-nav">
+                                
+
+
+                                <li><a href="shop.html"><i class="fas fa-gifts"></i>Productos</a></li>
+                                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Carrito</a></li>
+                                <li><a href="login.html"><i class="fas fa-user"></i> Iniciar Sesión</a></li>
+                                <li><a href="contact-us.html"><i class="fas fa-address-book"></i>Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="mainmenu pull-left">
+                            <ul class="nav navbar-nav collapse navbar-collapse">
+                                <li><a href="index.html">Inicio</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="cart_items">
+
+        <div class="container">
+            <div class="left-sidebar">
+                <h2>Productos</h2>
+            </div>
+            <h2 class="titleProducts">Modificar Producto</h2>
+            <br>
+        </div>
+        <div class="container">
+            <form class="row g-3">
+                <div class="col-md-12">
+                    <h4>Nombre del producto</h4>
+                    <input type="text" class="form-control" id="inputNombre" placeholder="Ej. Agua" title="Ingresa el nombre del producto" required autocomplete="off" value="Coca Cola">
+                </div>
+                <div class="col-md-12">
+                    <h4>Descripción del producto</h4>
+                    <input type="text" class="form-control" id="inputDescrip" placeholder="Ej. Botella de 600 ml" title="Ingresa la descripción del producto" required autocomplete="off" value="Coca cola de vidrio de 500ml">
+                </div>
+                <div class="col-md-12">
+                    <h4>Codigo de barras</h4>
+                    <input type="text" class="form-control" id="inputPassword4" pattern="[0-9]{12}" title="Ingresa el codigo de barras (12 digitos)" required placeholder="Ej. 123456789012" autocomplete="off" value="123450987645">
+                </div>
+                <div class="col-md-12">
+                    <h4>Existencia actual</h4>
+                    <input type="number" class="form-control" id="inputCity" min="1" max="200" title="Ingresa la existencia" required placeholder="Ej. 12" value="200">
+                </div>
+                <div class="col-md-12">
+                    <h4>Precio</h4>
+                    <input type="number" class="form-control" id="inputPrice" title="Ingresa el precio del producto" required placeholder="Ej. 12.00" value="15">
+                </div>
+                <div class="col-12">
+                    <input class="btn btn-default update" type="submit" name="" value="Guardar">
+                    <a class="btn btn-default update" href="products.html"><i class="fa fa-eye"></i> Ver todos</a>
+                </div>
+            </form>
+        </div>
+        <br>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="single-widget">
+                            <h2>Service</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Online Help</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Order Status</a></li>
+                                <li><a href="#">Change Location</a></li>
+                                <li><a href="#">FAQ’s</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="single-widget">
+                            <h2>About Shopper</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Company Information</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Store Location</a></li>
+                                <li><a href="#">Affillate Program</a></li>
+                                <li><a href="#">Copyright</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-2">
+                        <div class="single-widget">
+                            <h2>About Shopper</h2>
+                            <form action="#" class="searchform">
+                                <input type="email" title="Your email address" placeholder="Your email address" />
+                                <button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+                                <p>Get the most recent updates from <br />our site and be updated your self...</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
